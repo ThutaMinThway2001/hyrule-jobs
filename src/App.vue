@@ -1,6 +1,9 @@
 <template>
   <div class="app">
     <header>
+      <div class="title">
+        <h1>Hyrule Jobs</h1>
+      </div>
       <button @click="handleClick('title')">Order By Title</button>
       <button @click="handleClick('location')">Order By Location</button>
       <button @click="handleClick('salary')">Order By Salary</button>
@@ -56,5 +59,16 @@ export default defineComponent({
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+  }
+  header .title{
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    width: 60px;
+    margin-right: 20px;
+  }
+  header h1 {
+    font-size: 3em;
   }
 </style>
